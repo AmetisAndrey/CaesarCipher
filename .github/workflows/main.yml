@@ -16,8 +16,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=your-project-key
-            -Dsonar.organization=your-organization
+            -Dsonar.projectKey=AmetisAndrey_CaesarCipher
+            -Dsonar.organization=ametisandrey
             -Dsonar.sources=.
             -Dsonar.exclusions=**/node_modules/**,**/target/**,**/build/**
             -Dsonar.coverage.exclusions=**/*
