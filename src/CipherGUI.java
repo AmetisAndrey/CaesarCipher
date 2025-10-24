@@ -26,6 +26,8 @@ public class CipherGUI extends JFrame {
                 Graphics2D g2d = (Graphics2D) g;
                 Color color1 = new Color(30, 60, 120);
                 Color color2 = new Color(90, 30, 150);
+                 color1 = new Color(30, 60, 120);
+                 color2 = new Color(90, 30, 150);
                 GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
                 g2d.setPaint(gp);
                 g2d.fillRect(0, 0, getWidth(), getHeight());
