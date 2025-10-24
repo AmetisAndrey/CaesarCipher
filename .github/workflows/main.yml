@@ -9,6 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: security test
+        run: pwd
+      - name: security test
+        run: ls -la
+
       - name: SonarCloud Quick Scan
         uses: SonarSource/sonarcloud-github-action@v2
         env:
@@ -18,9 +23,9 @@ jobs:
           args: >
             -Dsonar.projectKey=AmetisAndrey_CaesarCipher
             -Dsonar.organization=ametisandrey
-            -Dsonar.sources=.
+            -Dsonar.sources=**/.
             -Dsonar.exclusions=**/node_modules/**,**/target/**,**/build/**
             -Dsonar.coverage.exclusions=**/*
             -Dsonar.cpd.exclusions=**/*
-            -Dsonar.java.source=8
-            -Dsonar.java.target=8
+            -Dsonar.java.source=17
+            -Dsonar.java.target=17
