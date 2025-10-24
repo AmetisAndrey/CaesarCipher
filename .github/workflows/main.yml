@@ -23,7 +23,7 @@ jobs:
           args: >
             -Dsonar.projectKey=AmetisAndrey_CaesarCipher
             -Dsonar.organization=ametisandrey
-            -Dsonar.sources=**/.
+            -Dsonar.sources=src
             -Dsonar.exclusions=**/node_modules/**,**/target/**,**/build/**
             -Dsonar.coverage.exclusions=**/*
             -Dsonar.cpd.exclusions=**/*
