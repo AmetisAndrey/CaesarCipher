@@ -63,7 +63,6 @@ class CaesarCipherTest {
         assertTrue(cipher.validateKey(5));
         assertTrue(cipher.validateKey(25));
     }
-
     @Test
     @DisplayName("Encrypt empty string -> empty string")
     void testEnglishEmptyString() {
